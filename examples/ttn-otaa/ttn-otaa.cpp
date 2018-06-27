@@ -63,7 +63,7 @@ static osjob_t sendjob;
 
 // Schedule TX every this many seconds (might become longer due to duty)
 // cycle limitations).
-const unsigned TX_INTERVAL = 120;
+const unsigned TX_INTERVAL = 60;
 
 //Flag for Ctrl-C
 volatile sig_atomic_t force_exit = 0;
