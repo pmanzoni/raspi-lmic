@@ -158,7 +158,11 @@ void setup() {
 }
 
 int main(void) {
-  
+	
+  // initing bcm lib, otherwise it will result in a segmentation fault
+  if (!bcm2835_init())
+    return 1;
+
   setup();
   
   while(1) {
